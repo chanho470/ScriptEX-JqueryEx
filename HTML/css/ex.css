@@ -1,0 +1,36 @@
+header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background: red;
+    color: white;
+}
+header p{
+    text-align: center;
+}
+section{
+    top: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+
+    
+}
+select {
+    
+}
+
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background: blue;
+    color: white;
+}
+footer p{
+    text-align: center;
+}

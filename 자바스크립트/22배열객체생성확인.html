@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var city = new Array("서울","부산","인천");
+        function printArr(){
+            if(city instanceof Array){
+                document.write('배열 객체가 생성되었습니다');
+                var i=0;
+                for(i=0;i<city.length;i++){
+                    document.write("배열의 데이터["+i+"]"+city[i]+"<br>");
+                }
+            }else{
+                document.write("배열 객체가 아님");
+                document.write("데이터"+city+"<br>");
+            }
+        }
+        printArr();
+        document.write("<p/> city 변수타입"+ typeof city+"<br>");
+        document.write("배열 객체 확인결과"+Array.isArray(city)+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#unit{
+    width: 20%;
+   
+    border: 3px solid black;
+}
+#unit>img{
+    width: 100%;
+   
+}
+#unit>#hash{
+    font-size: 20px;
+}
+#unit>#money{
+    font-size: 20px;
+    font-weight: 900;
+}

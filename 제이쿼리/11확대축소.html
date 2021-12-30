@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <img src="../HTML/images1/1.jpg"/> <br><br>
+    <button class="move">확대</button> <br><br>
+    
+    <button class="init">축소</button> <br><br>
+    <script>
+        $(document).ready(function(){
+            $('button.move').click(function(){
+                $('img').animate({
+                    left:'1000px',
+                    height:'1000px',
+                    width:'1350px'
+                });
+            });
+            $('button.init').click(function(){
+                $('img').animate({
+                    left:'0px',
+                    height:'100px',
+                    width:'130px'
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

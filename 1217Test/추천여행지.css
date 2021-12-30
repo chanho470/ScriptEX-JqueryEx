@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+/* ========================================================= */
+/* 미국 */
+.search-box{
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(0%,-50%);
+    background: rgb(104, 104, 216);
+    height: 50px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.search-box:hover>.search-text{
+    width: 200px;
+    padding: 0 10px;
+}
+
+.search-box:hover>.search-btn{
+    background: rgb(106, 243, 243);
+}
+.search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+
+}
+.search-text::placeholder{
+    color: black;
+    font-weight: 900;
+}

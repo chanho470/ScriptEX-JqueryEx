@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            margin: 25px;
+            color: cadetblue;
+            font-weight: bolder;
+            border: 5px solid navy;
+            padding: 10px;
+        }
+        img{
+            width: 150px;
+            padding: 25px;
+            border: 25px solid navy;
+            margin: 25px;
+        } */
+        /* p{
+            background-color: navy;
+            color: red;
+            font-weight: bold;
+            font-size: 16pt;
+        }
+        p.c1{
+            width: 700px;
+            height: 80px;
+            color: green;
+        }
+        p.c2{
+            width: 50%;
+            height: 150%;
+            color: purple;
+        }
+        p.c3{width: 10cm;
+            height: 3cm;
+            color: blue;} */
+        /* p{
+            background-color:  yellow;
+            color: red;
+            font-weight: bold;
+            font-size: 16pt;
+        }
+        p.pad{
+            color: purple;
+            padding: 20px;
+        }
+        p.mar{
+            color: green;
+            margin: 30px;
+        }
+        p.mp{
+            color: blue;
+            padding: 5%;
+            margin: 5%;
+        } */
+        /* body{
+            font-weight: bold; font-size: 16pt;
+            background-color: lightgoldenrodyellow;
+        }
+        .mp1{
+            background-color: aqua; color: red;
+            margin-bottom: 40px; padding-left: 50px;
+        }
+        .mp2{
+            background-color: silver; color: green;
+            margin: 20px;
+            padding: 10px 30px 10px 30px;
+        }
+        .mp3{
+            background-color: gray;
+            color: purple;
+            margin-top: 50px;
+            margin-left: 35px;
+            margin-bottom: 50px;
+            margin-right: 35px;
+        } */
+
+        /* body{font-family:consolas;}
+        h3.non{border-style: none;}
+        h3.hidden{border-style: hidden;}
+        h3.dotted{border-style:dotted ;}
+        h3.dashed{border-style: dashed;}
+        h3.solid{border-style:solid ;}
+        h3.double{border-style:double ;}
+        h3.groove{border-style: groove;}
+        h3.ridge{border-style: ridge;}
+        h3.inset{border-style: inset;}
+        h3.outset{border-style: outset ;}
+        h3.mix{border-style: dotted dashed solid double;} */
+
+        /* .bt1{
+            background-color: aqua;
+            color: red;
+            margin-bottom: 15px; padding-left: 50px;
+            border-style: dotted; border-width: thick;
+            border-color: green;
+        }
+        .bt2{
+            background-color:  gray; color: green;
+            margin: 20px; padding: 5px 10px;
+            border-style: solid;
+            border-width: 1px 3px 5px 3px;
+            border-color: navy red fuchsia black;
+        }
+        .bt3{
+            background-color: gray; color: purple;
+            margin:  50px 15px 20px;
+            padding: 20px;
+            border-style: dashed double;
+            border-width: 5px 0px;
+            border-color: red;
+        }
+        .bt4{
+            border-top:  5px solid red;
+            border-bottom:  5px solid red;
+        } */
+        /* .br1{
+            background-color:  lime;
+            color: red;
+            border-style: solid;
+            border-width: thick;
+            border-color: green;
+            border-radius: 30%;
+        }
+        .br2{
+            background-color:  maroon;
+            color: yellow;
+            border-style: dotted;
+            border-width: 2px;
+            border-color: white;
+            border-radius: 15px 35px;
+        }
+        .br3{
+            background-color:  teal;
+            color: aqua;
+            border-style: dashed;
+            border-width: 5px;
+            border-color: red;
+            border-radius: 15px 15px 25px 35px;
+        }
+        .br4{
+           border: 3px solid red;
+           border-top-right-radius: 30px;
+        } */
+        /* .boxshadow1{
+            background-color: yellow;
+            border: 5px solid blue;
+            box-shadow: 10px 10px 0 teal;
+        }
+        .boxshadow2{
+            background-color: orange;
+            border: 5px solid red;
+            box-shadow: 20px 20px 50px  red;
+        }
+        .boxshadow3{
+            background-color: silver;
+            border: 5px solid black;
+            box-shadow: 20px 20px 30px -20px ;
+        }
+        .boxshadow4{
+            background-color: lime;
+            border: 5px solid olive;
+            box-shadow: 10px 10px 0 10px fuchsia inset;
+        } */
+
+        /* div{
+            width: 200px; height: 50px; padding: 10px; margin: 30px;
+        }
+        #bs1{
+            border: 1px solid rgba(102 , 185 ,255 ,0.4);
+            box-shadow: 0px 0px 20px 10px rgba(102 , 185 ,255 ,0.4);
+        }
+        
+        #bs2{
+            border: 1px solid black;
+            box-shadow: 10px 10px #BCE55C,20px 20px #CEF279,30px 30px #E4F7BA;
+        } */
+        /* img{
+            padding:  20px; margin: 20px;
+        }
+        .shadow1{
+            box-shadow: 5px 5px 10px #000;
+        }
+        .shadow2{
+            box-shadow: 5px -5px 10px #000;
+        } */
+
+        /* .sp1{
+            position: static;
+            top: 100px;
+            background-color: cyan;
+            width: 400px;
+            height: 50px;
+        }
+        .sp2{
+            position: fixed;
+            left: 30px;
+            background-color: orange;
+            width: 400px;
+            height: 50px;
+        }
+        .sp3{
+            background-color: lightgreen;
+            width: 400px;
+            height: 50px;
+        } */
+        
+        /* .sp{
+            position: static;
+            left: 30px;
+            background-color: cyan;
+            width: 400px;
+            height: 50px;
+        }
+        .rp1{
+            position: relative;
+            left: 30px; top:10px;
+            background-color: orange;
+            width: 400px;height: 50px;
+        }
+        .rp2{
+            position: relative;
+            left: 60px; top:20px;
+            background-color: lightgreen;
+            width: 400px;
+            height: 50px;
+        } */
+
+        /* .ap1{
+            position: absolute;
+            left: 30px; top:70px;
+            background-color: yellow;
+            width: 400px;
+            height: 50px;
+        }
+        .ap2{
+            position: absolute;
+            left: 40px; top:90px;
+            background-color: lightgreen;
+            width: 400px;
+            height: 50px;
+        }
+        .rp{
+            position: relative;
+            left: 50px; top:80px;
+            background-color: cyan;
+            width: 400px;
+            height: 50px;
+        } */
+
+        /* .p{
+            background-color: yellow;
+            width: 300px; height: 50px;
+        }
+        .fp{
+            position: fixed;
+            right: 5px;
+            top: 5px;
+            background-color: lightgreen;
+            width: 300px;
+            height: 50px;
+        } */
+
+        /* img{
+            float: right;
+            margin: 0 0 10px 10px;
+        } */
+
+        /* .div1{
+            float: left;
+            width: 100px; height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+        .div2{
+            border:  1px solid red;
+        }
+        .div3{
+            float: left;
+            width: 100px; height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+        }
+        .div4{border: 1px solid red;
+        clear: left;} */
+
+        div{
+            border: 3px solid #73AD21;
+        }
+        .img1{
+            float: right;
+        }
+        .fix{
+            overflow-anchor: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>CSS 박스모델은 content , padding , border , margin으로 구성</p>
+    <img src="../images/조던1.jpg" border="5" width="150" /> -->
+
+    <!-- <p>박스 모델의 내용 크기지정</p>
+    <p class="c1"> 픽셀 단위 지정</p>
+    <p class="c2"> 비율 단위 지정</p>
+    <p class="c3"> cm 단위 지정</p> -->
+
+    <!-- <p>박스 안쪽 여백과 바깥쪽 여백 지정</p>
+    <p class="pad"> inside space 지정</p>
+    <p class="mar"> outside spcae 지정</p>
+    <p class="mp"> inside and outside space 지정</p> -->
+
+    <!-- <p>box 4side size select</p>
+    <p class="mp1">mp1</p>
+    <p class="mp2">mp2</p>
+    <p class="mp3">mp3</p> -->
+
+    <!-- <h3 class="none"> no border </h3>
+    <h3 class="hidden"> hidden border </h3>
+    <h3 class="dotted">dotted</h3>
+    <h3 class="dashed">dashed </h3>
+    <h3 class="solid">solid </h3>
+    <h3 class="double">double </h3>
+    <h3 class="groove">groove </h3>
+    <h3 class="ridge">ridge </h3>
+    <h3 class="inset">inset </h3>
+    <h3 class="outset">outset </h3>
+    <h3 class="mix">mix </h3> -->
+
+    <!-- <p class="bt1"> 박스 테두리 지정 1</p>
+    <p class="bt2"> 박스 테두리 지정 2</p>
+    <p class="bt3"> 박스 테두리 지정 3</p>
+    <p class="bt4"> 박스 상하 좌우 테두리는 ~~ 속성을 이용하여 지정할수있음 </p> -->
+
+    <!-- <h1 class="br1">radius ex1 </h1>
+    <h1 class="br2">radius ex2 </h1>
+    <h1 class="br3">radius ex3 </h1>
+    <h1 class="br4">radius ex4 </h1> -->
+
+    <!-- <h1 class="boxshadow1"> box shadow ex1</h1>
+    <h1 class="boxshadow2"> box shadow ex1</h1>
+    <h1 class="boxshadow3"> box shadow ex1</h1>
+    <h1 class="boxshadow4"> box shadow ex1</h1> -->
+
+    <!-- <div id="bs1">
+        <h3>박스그림자 특수 효과1</h3>
+    </div>
+    <div id="bs2">
+        <h3>박스 그림자 특수 효과2</h3>
+    </div> -->
+
+    <!-- <img src="../images/조던1.jpg" class="shadow1" width="100">
+    <img src="../images/조던1.jpg" class="shadow2" width="100"> -->
+<!-- 
+    <h1>positioning style1</h1>
+    <p class="sp1">정적인 위치 설정 적용1</p>
+    <p class="sp2">정적인 위치 설정 적용2</p>
+    <p class="sp3">기본 위치설정</p> -->
+<!-- 
+    <h1>positioning style2</h1>
+    <p class="sp">정적인 위치 설정 적용1</p>
+    <div class="rp1">상대 위치 설정 적용2</div>
+    <p class="rp2">상대 위치설정</p> -->
+
+    <!-- <h1>positioning style3</h1>
+    <div class="ap1">절대 위치 설정 적용1</div>
+    <div class="ap2">절대 위치 설정 적용2</div>
+    <div class="rp">상대 위치설정</div> -->
+
+    <!-- <h1>positioning style4</h1>
+    <p class="p">기본위치 설정박스1</p>
+    <p class="p">기본위치 설정박스2</p>
+    <p class="p">기본위치 설정박스3</p>
+    <p class="p">기본위치 설정박스4</p>
+    <p class="p">기본위치 설정박스5</p>
+    <p class="fp">고정 위치 설정박스 오른쪽 스크롤 위아래로 이동</p> -->
+
+    <!-- <p>플롯 설정은 웹 문서의 레이아웃을 </p>
+    <P><img src="../images/조던1.jpg" alt="images" width="140" height="140">
+        국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 
+        정부는 미리 국회의 의결을 얻어야 한다. 
+        원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 
+        1차에 한하여 중임할 수 있다. 모든 국민은 근로의 의무를 진다. 
+        국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다. 
+        법관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며, 
+        징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지 아니한다. 
+        중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다.
+         위원장은 위원중에서 호선한다.
+    </P> -->
+
+    <!-- <h2>float 속성 사용</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2-
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Quis magni ipsam nesciunt ullam laudantium sapiente totam provident vitae perspiciatis officia? 
+         Magnam, nesciunt? Atque numquam eius veniam laboriosam, nemo corrupti eveniet.
+    </div>
+    <h2>clear 속성 사용</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4-
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse maxime distinctio, ad est ipsum eaque assumenda quidem dolorum odio 
+        laudantium ab vel dolor id, veniam modi, labore dolorem ipsa blanditiis.
+        clear both로 위에 설정되어있는 값을 초기화 시키는 작업을 수행한다!
+    </div> -->
+
+    <p>이미지가 박스 영역을 넘어섰을때!!</p>
+    <div><img class ="img1" src="../images/조던1.jpg" alt="images" width="140" height="140">
+    이미지가 오른쪽 정렬로 되오있었는데 박스영역을 벗어났습니다!</div>
+    <p style="clear:right"> overflow auto 속성을 사용하여 해결</p>
+    <div class="fix"><img src="../images/조던1.jpg" alt="images" width="140" height="140">
+    이미지가 박스 영역을 벗어날 경우 오버플로 속성을 오토로하여서 해셜가능</div>
+</body>
+</html>

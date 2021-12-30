@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+#logo{
+    position: relative;
+    width: 300px;
+    height: 80px;
+    background-color: black;
+    top: 25vh;
+    left: 300px;
+    
+}
+
+.taxbill #영수증{
+    position: relative;
+    float: right;
+    font-size: 50px;
+    color: gray;
+    margin-right: 200px;
+    top: -130px;
+    font-weight: lighter;
+}
+
+.stack{
+    position: relative;
+    top: 20px;
+    margin: 30vh 0 40vh 45vh;
+    width: 1050px;
+    height: 45vh;
+    /* border는 임시 */
+}
+
+.stack h6{
+    color: rgb(47,82,148);
+}
+
+.stack #name{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.stack #Date{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.stack #headcount{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.stack #price{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.stack #price h2{
+    text-align: right;
+    font-size: 50px;
+}

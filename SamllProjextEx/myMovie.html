@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./myMovieCss.css" rel="stylesheet" type="text/css"/>
+    <script src="./jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <hgroup id="title">
+        <h1 data-name="information">Information</h1>
+        <h1 data-name="character">Character</h1>
+        <h1 data-name="multimedia">Multimedia</h1>
+    </hgroup>
+
+    <section id="container">
+        <div id="main" data-name="main" class="active"><img src="./images/rb2back.jpg" width="100%"  /></div>
+        <div id="information" data-name="information" > 
+            <img src="./images/pj.jpg" width="40%"/>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, 
+                    quam veniam temporibus modi dolorum dolorem, quaerat beatae a corrupti neque sunt consequatur aliquid, 
+                    debitis amet alias atque recusandae necessitatibus aspernatur.</p>
+            </div>
+        </div>
+        <div id="character" data-name="character">
+
+            <a href="#">Left Button</a> <a href="#">Right Button</a>
+            <article class="show">
+                <h1>프로도</h1>
+                <img src="./images/frod.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis, 
+                    quos excepturi sint impedit suscipit quas soluta obcaecati ipsa commodi voluptas rerum. 
+                    Commodi officiis ipsa quod praesentium, nam accusantium suscipit.</p>
+            </article>
+            <article >
+                <h1>샘</h1>
+                <img src="./images/sam.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis, 
+                    quos excepturi sint impedit suscipit quas soluta obcaecati ipsa commodi voluptas rerum. 
+                    Commodi officiis ipsa quod praesentium, nam accusantium suscipit.</p>
+            </article>
+            <article >
+                <h1>레골라스</h1>
+                <img src="./images/reg.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis, 
+                    quos excepturi sint impedit suscipit quas soluta obcaecati ipsa commodi voluptas rerum. 
+                    Commodi officiis ipsa quod praesentium, nam accusantium suscipit.</p>
+            </article>
+            <article >
+                <h1>김리</h1>
+                <img src="./images/kim.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis, 
+                    quos excepturi sint impedit suscipit quas soluta obcaecati ipsa commodi voluptas rerum. 
+                    Commodi officiis ipsa quod praesentium, nam accusantium suscipit.</p>
+            </article>
+            
+        </div>
+        <div id="multimedia" data-name="multimedia" >
+            <img src="./images/gol.jpg" width="940" height="480" 
+                controls="controls"></img>
+        </div>
+    </section>
+
+    <nav id="main_navigation">
+        <ul>
+            <li><a href="#" data-target="information">Moive Info</a></li>
+            <li><a href="#" data-target="character">Character</a></li>
+            <li><a href="#" data-target="multimedia">Multimedia</a></li>
+            <li><a href="#" >Download</a></li>
+        </ul>
+    </nav>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('#main_navigation a').click(function(){
+                var target = $(this).attr('data-target');
+                alert(target);
+                $(':not([data-name='+target+'])').removeClass('active');
+                $('[data-name='+target+']').addClass('active');
+            });
+
+            var currentPosition =1;
+            $('#character>a:nth-child(1)').click(function(){
+                currentPosition -=1;
+                if(currentPosition<1){
+                    currentPosition=4;
+                }
+                $('article').removeClass('show');
+                $('article:nth-of-type('+currentPosition+')').addClass('show');
+            });
+            $('#character>a:nth-child(2)').click(function(){
+                currentPosition +=1;
+                if(currentPosition>4){
+                    currentPosition=1;
+                }
+                $('article').removeClass('show');
+                $('article:nth-of-type('+currentPosition+')').addClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css_ex.ex.css"></link>
+    <!-- css 사용하기위한 링크 배치의 위치에 따라 결과가 달라 질 수있다 -->
+    <title>Document</title>
+    <style> 
+    *{
+        font-size: 30px;
+        /*  앞에 별이 있으면 모든 데이터의 사이즈를 같게함 */
+    }
+    p2{  color: red;}
+    p{   color: red!important;}
+    /* !important으로 우선순위를 정함 무조건 실행되어야~ */
+    p{   color: gray;}
+    p{   color: purple;}
+    </style>
+</head>
+<body>
+    <p1 style="color:gold;">온라인 스타일 시트 사용</p1><br/>
+    <p2>내부 스타일을 적용함</p2><br/>
+    <p3>외부 스타일 적용</p3><br/>
+
+    <p>css가 정의 중복될경우 어떤것이 적용??</p>
+    <!-- 중복될 경우에는 맨 마지막거 -->
+
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    
+
+</body>
+</html>

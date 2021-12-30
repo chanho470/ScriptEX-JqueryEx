@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="input.html" method="get"> 
+        <!-- get 방식은 노출이 되는 방식 -->
+        <!-- post 는 get과 대척점에 있음 -->
+        <input type="password" name = "input"/>
+        <input type="submit" value="버튼의 값을 바꿈ㅋㅋ">
+    </form>
+
+    <form>
+        이름 : <input type = "text" name = "name"><br/>
+        학번 : <input type = "text" name = "number" size="10"><br/>
+        <input type="submit" value="제출">
+    </form>
+
+    <form action="input.html" method="get"> 
+        성별
+        <input type="radio" name = "gender" value="male">남성
+        <input type="radio" name = "gender" value="female">여성
+        <input type="submit" value="제출">
+        name 의 값은 동일해야 한다!
+    </form>
+    // 라벨 다른거임
+    <form action="input.html" method="get"> 
+        성별
+        <label for ="male">남성</label>
+        <input type="radio" name = "gender" value="male">
+        <label for ="female">여성</label>
+        <input type="radio" name = "gender" value="female">
+        <input type="submit" value="제출">
+        name 의 값은 동일해야 한다!
+    </form>
+
+    <form action="input.html" method="get"> 
+        과일
+        <input type="checkbox" name = "fruits" value="apple" checked>사과
+        <input type="checkbox" name = "fruits" value="grape" >포도
+        <input type="checkbox" name = "fruits" value="orange" >오렌지
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+    </form>
+
+    <form name = "input" action="input.html" method="get"> 
+        가격 : <input type = "text" name = "price"><br/>
+        수량 : <input type = "text" name = "quantity"><br/>
+        <input type = "button" value="계산" onclick="alert('1000원')"> <br/>
+    </form>
+    <form name = "input" action="input.html" method="get"> 
+        너님의 의견 <br/>
+        <textarea name = "Feedback" rows="3" cols="30" ></textarea>
+    </form>
+
+    <form name = "input" action="input.html" method="get"> 
+        <select name="food">
+            <option value="korean" selected >한식</option>
+            <option value="chinese" >중식</option>
+            <option value="western"  >양식</option>
+        </select>
+    </form>
+    <form name = "input" action="input.html" method="get"> 
+        <fieldset>
+            <legend>인적사항 입력</legend>
+            가격 : <input type = "text" name = "price"><br/>
+            수량 : <input type = "text" name = "quantity"><br/>
+            <input type = "button" value="계산" onclick="alert('1000원')"> <br/>
+        </fieldset>
+    </form>
+    <form enctype="multipart/form-data">
+       <br/>
+        파일 업로드!!!
+        <input type = "file" accept="image/jpg , image/gif">
+    </form>
+
+    <form action="input.html" method="get">
+        </br>
+        </br>
+        <!-- required 무조건 있어야하는거 -->
+        이메일 : <input type ="email" name = "email" required ></br>
+        URL : <input type ="url" name = "url" ></br>
+        TEL : <input type ="tel" name = "tel" pattern = "[0-9]{3}-[0-9]{4}-[0-9]{4}"></br>
+        <!-- 전화번호의 패턴을 지정하는 코드이다 0~9까지 3자리 ~~~ -->
+        색상 : <input type ="color" name = "color" ></br>
+        월 : <input type ="month" name = "month" ></br>
+        날짜 : <input type ="date" name = "date" ></br>
+        주 :<input type="week" name="week"></br>
+        시간:<input type="time" name="time"></br>
+        지역시간:<input type="datetime-local" name="localdatetime"></br>
+        숫자 :<input type="number" name="number" min="1" max="10" step="2"></br>
+        범위:<input type="range" name="range" min="1" max="10" step="2"></br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <script>
+        // output ='<h1>Header</h1>';
+        // document.body.innerHTML=output;
+        // $(document).ready(function(){
+        //     $('h1').css('color','red');
+        //     $('h1').css('background','black');
+        // });
+
+        // $(document).ready(function(){
+        // var src = $('script').attr('src');
+        // alert(src);
+        // });
+
+        // $(document).ready(function(){
+        //     $('img').attr('alt','속성 지정 연습');
+        //     $('img').attr('src','../HTML/images1/1.jpg');
+        //     $('img').attr('width','200');
+        // });
+
+
+        output = "<img></img> <img></img> <img></img>";
+        document.body.innerHTML=output;
+        $(document).ready(function(){
+            $('img').attr({
+                alt:'속성지정연습',
+                src:function(index){
+                    var size = (index +1)*100;
+                    return "http://placehold.it/"+size+'x100';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

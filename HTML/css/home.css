@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(254, 254, 254);
+} 
+
+
+
+/* header */
+header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 15%;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    align: center;
+}
+
+header nav ul{
+    flex: 1;
+    margin-top: 30px;
+    margin-left: -10px;
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 40px;
+}
+header nav ul li a{
+    color: black;
+    /* font-size: 4vh; */
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#L{
+    margin-top: 50px;
+    margin-left: -750px;
+}
+#R{
+    margin-top: -35px;
+    margin-left: 670px;
+}
+
+#Title{
+    cursor: pointer;
+    margin-top: -100px;
+    font-size: 100px;
+    text-align: center;
+    color: transparent;
+    background: url("../images/back.png");
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    -webkit-text-stroke: 3px black;
+    -webkit-background-clip: text;
+}
+@keyframes back{
+    100%{
+        background-position: 1000px 0;
+    }
+}
+#imgtravel{
+    height: 50px;
+    cursor: pointer;
+}
+
+.profile-icon{
+    float: right;
+    width: 60px;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: -75px;
+}
+/* header 끝 */
+
+/* footer */
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 10vh;
+    width: 900vw;
+    color: white;
+    margin-left: 90%;
+    background-color: rgb(47,82,148);
+}
+footer p{
+    text-align: center;
+}
+/* footer 끝 */
+
+/* 위쪽 section */
+.top{
+    padding-top: 150px;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.16),transparent),url("../images/background.jpg");
+    background-size: cover;
+}
+
+
+/* 베너 */
+.section .slidelist .slideitem a img{
+    height: 550px;
+    position: relative;
+}
+.section input[id*="slide"] {display:none;}
+.section .slidewrap {max-width:1100px; margin-top: -250px; margin-left: 425px;}
+.section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;border: 15px solid rgb(47,82,148);}
+.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+.section .slidelist > li > a {display:block;position:relative;}
+.section .slidelist > li > a img {width:100%;}
+.section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:30px;cursor:pointer;}
+
+/* input에 체크되면 슬라이드 효과 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {display:none;}
+.section .left {left:30px;background:url('../images/left.png') center center / 100% no-repeat;}
+.section .right {right:30px;background:url('../images/right.png') center center / 100% no-repeat;}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+
+/* 페이징 */
+.slide-pagelist {text-align:center;padding:10px;}
+.slide-pagelist > li {display:inline-block;vertical-align:middle;}
+.slide-pagelist > li > label {display:block;padding:5px 20px;border-radius:30px;background:red;margin:0px 10px;cursor:pointer;}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:rgb(47,82,148);}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:rgb(47,82,148);}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:rgb(47,82,148);}
+
+/* 베너 끝 */
+
+
+/* 버튼 */
+.section #button #예약하기{
+    height: 85px;
+    position: relative;
+    margin-left: 340px;
+    z-index: 10px;
+    top: 80px;
+    transition: all 0.5s;
+    background-color: rgb(47,82,148);
+
+}
+.section #button #추천여행지{
+    height: 85px;
+    position: relative;
+    margin-left: 340px;
+    z-index: 10px;
+    top: 90px;
+    transition: all 0.5s;
+    background-color: rgb(47,82,148);
+}
+.section #button #상품패키지{
+    height: 85px;
+    position: relative;
+    margin-left: 340px;
+    z-index: 10px;
+    top: 100px;
+    transition: all 0.5s;
+    background-color: rgb(47,82,148);
+}
+.section #button #예약하기:hover{
+    right: 255px;
+    background-color: red;
+}
+.section #button #추천여행지:hover{
+    right: 255px;
+    background-color: red;
+}
+.section #button #상품패키지:hover{
+    right: 255px;
+    background-color: red;
+}
+
+
+
+
+.mid{
+    margin: 100px 0 0 100px;
+    width: 1270px;
+}
+
+.mid div h1{
+    position: relative;
+    color: white;
+    font-size: 60px;
+    top: -550px;
+    left: 15px;
+}
+#events{
+    width: 500px;
+    height: 700px;
+}
+#events_list1 img{
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    width: 300px;
+    height: 220px;
+    top: -700px;
+    border: solid black;
+}
+#img1{
+    margin-left: 350px;
+}
+#events_list2 div{
+    float: left;
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    top: -700px;
+    border: solid rgb(47,82,148);
+    margin-left: 5px;
+    left: 345px;
+    font-size: 20px;
+}
+
+.bottom{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+}

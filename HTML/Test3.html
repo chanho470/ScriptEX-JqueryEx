@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .btn_text{
+  width : 180px;
+  height: 23px;
+}
+section {
+  display : flex;
+}
+.btn_search{
+  font-weight : 900;
+  font-family: "Font Awesome 5 Free";
+  background-color : transparent;
+  border : none;
+  cursor : pointer;
+  position : absolute;
+  right : 5px;
+  top : 50%;
+  transform : translatey(-50%);
+}
+.btn_search::before{
+  content : "\f002";
+}
+form{
+  position : relative;
+}
+</style>
+<body>
+    <section>
+        <div class="search">
+          <form action="">
+            <input class="btn_text" type="text">
+            <button class="btn_search" ></button>
+          </form>
+        </div>
+      </section>
+</body>
+</html>

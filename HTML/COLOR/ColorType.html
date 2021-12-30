@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{background-color: purple;}
+        h2{background-color: blue;}
+        h3{background-color: green;}
+
+        .class1{color: grey;
+        background-color: coral;}
+
+        .class2{color: yellow;
+        background-color: cadetblue}
+        
+        h3.class1{color: navy;
+        background-color: cadetblue}
+
+        #id1{
+            color: olive;
+            background-color: orange;
+        }
+
+        h1[text]{
+            color: palegreen;
+            background-color: peru;
+        }
+        h1[text="attr3"]{
+            color: rgb(35, 54, 35);
+            background-color: rgb(31, 29, 28);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <!-- 각요소에 다르게 적용 -->
+
+    <h1 class="class1">h1</h1>
+    <h2 class="class2">h2</h2>
+    <!-- 클래스 지정해서~~~ -->
+    <h3 class="class1">h3</h3>
+
+    <p id="id1">아이디 선택자</p>
+
+    <h1 text = "attr1"> text 속성 이름 선택자</h1>
+    <h1 text = "attr3"> text 속성과 속성값 선택자</h1>
+</body>
+</html>

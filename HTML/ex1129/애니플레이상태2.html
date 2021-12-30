@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            
+        }
+        #box1{
+            background-color: blue;
+            animation-direction: normal;
+            animation-name: L-box;
+        }
+        #box2{
+            background-color: yellow;
+            animation-direction: alternate;
+            animation-name: R-box;
+        }
+        
+        @keyframes L-box{
+            0%{left: 0px;}
+            50%{left: 200px;}
+            100%{left: 0px;}
+        }
+        @keyframes R-box{
+            0%{left: 400px;}
+            50%{left: 200px;}
+            100%{left: 400px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1">좌 박스</div>
+    <div id="box2">우 박스</div>
+</body>
+</html>

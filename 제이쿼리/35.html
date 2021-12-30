@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <script>
+        // function checkForm(){
+        //    var regExp =/Java/i; // i:이그노어 케이스 대소문자 ㄴ상관임
+        //    var str =document.frm.title.value;
+        //    var result = regExp.exec(str);
+        //    alert(result[0]);
+        // }
+
+        
+        // var regExp=/script/; 
+        // var string ='javascript jquery Ajax';
+        // var output = regExp.test(string);
+        // alert(output);
+
+        // var regExp=/script/; 
+        // var string ='javascript jquery Ajax';
+        // var output = string.split(regExp);
+        // var output1= string.search(regExp);
+        // var output2= string.match(regExp);
+        // alert(output);
+        // alert(output1);
+        // alert(output2);
+
+        // var regExp=/a/g; //g  모든 부분의 a에 ~~ 
+        // var string ='javascript jquery Ajax';
+        // var output=string.replace(regExp,'+$&+')
+        // alert(output);
+
+        var regExp=/(a)(v)(a)/; //g  모든 부분의 a에 ~~ 
+        var string ='javascript jquery Ajax';
+        var output=string.replace(regExp,'+$1=$2=$3+')
+        alert(output);
+        
+    </script>
+     <!-- <form name="frm">
+        <p>제목: <input type='text' name='title'>
+        <input type="submit" value="전송" onclick="checkForm()">
+    </form>  -->
+</body>
+</html>

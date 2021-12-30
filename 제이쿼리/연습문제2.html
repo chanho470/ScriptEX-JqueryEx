@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+    <script>
+        function checkForm(){
+            if(document.frm.userid.value.length<4 || document.frm.userid.value.length>12){
+                alert('아이디는 6~12자 이내로 입력');
+                document.frm.userid.select();
+            } else if(document.frm.userPwd.value.length<7 ){
+                alert('비밀 번호는 8자리 이상');
+                document.frm.userPwd.select();
+            }
+        }
+    </script>
+
+    <form name="frm">
+        <p>id: <input type='text' name='userid'>
+        <p>pw: <input type='password' name='userPwd'>
+        <input type="submit" value="전송" onclick="checkForm()">
+    </form>
+</body>
+</html>
