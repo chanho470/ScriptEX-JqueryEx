@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <h1>result</h1>
     <script>
         var result;
         result=add("코난",10); document.write("결과"+result+"<p/>");
@@ -20,16 +22,17 @@
             }
             return sum
         }
+        document.write("결과"+add("코난",10)+"<p/>");
         // result=add("코난",10); document.write("결과"+result+"<p/>");
         // result=add("장미",100); document.write("결과"+result+"<p/>");
         
-        function add(x,y){
-            return x+y;
-        }
-        var calSum =add; //함수를 변수에 할당
-        var addUp =add;
-        document.write("결과"+calSum(5,10)+"<p/>");
-        document.write("결과"+addUp(3,20)+"<p/>");
+        // function add(x,y){
+        //     return x+y;
+        // }
+        // var calSum =add; //함수를 변수에 할당
+        // var addUp =add;
+        // document.write("결과"+calSum(5,10)+"<p/>");
+        // document.write("결과"+addUp(3,20)+"<p/>");
 
     </script>
 </body>

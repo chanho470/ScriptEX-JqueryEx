@@ -1,0 +1,129 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+body{
+    background:url("./image/back.jpg") ;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    height: 2000px;
+}
+.wrap{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+#logo{
+    display:  block;
+    background: url('./image/fire2.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation:fire 10s linear infinite;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: Imapct;
+}
+@keyframes fire {
+    0%{background-position: 0% 50%;}
+    0%{background-position: 100% -50%;}
+}
+
+
+.tabs {
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:1200px;
+  height:600px;
+}
+.tabs .tab-header {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px 10px 0 0 ;
+  padding:10px;
+  display:flex;
+}
+.tabs .tab-header > div {
+  position:relative;
+  width:25%;
+  text-align:center;
+  padding:10px;
+  z-index:2;
+  font-weight:600;
+  color: white;
+  cursor:pointer;
+  transition:all 300ms ease-in-out;
+}
+.tabs .tab-header > div.active {
+  color:black;
+}
+.tabs .tab-indicator {
+  position:absolute;
+  width:calc(25% - 5px);
+  height:40px;
+  background:rgb(128, 128, 128);
+  top:10px;
+  left:10px;
+  border-radius:20px;
+  transition:all 300ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+  padding:20px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0 0 10px 10px;
+  border-top:4px solid rgba(132,132,132,0.5);
+  height:calc(100% - 50px);
+  overflow:hidden;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  opacity:0;
+  top:-100%;
+  transform:translateY(-10px);
+  transition:opacity 300ms ease-in-out,
+            transform 300ms ease-in-out;
+}
+.tabs .tab-body > div.active {
+  transform:translateY(0px);
+  top:30px;
+  opacity:1;
+}
+.tabs .tab-body h1 {
+  color:#222;
+  margin-bottom:10px;
+}
+.tabs .tab-body p {
+  color:#555;
+  font-size:15px;
+}
+
+#graph{
+    float:left;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+#input_w{
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    margin-left: 15px;
+    float:left;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#what{
+  margin-top: 10%;
+  margin-left: 10%;
+  text-align: center;
+}

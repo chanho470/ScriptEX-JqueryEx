@@ -1,0 +1,30 @@
+body{
+    background:url("./image/back.jpg") ;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    height: 2000px;
+}
+.wrap{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+#logo{
+    display:  block;
+    background: url('./image/fire2.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation:fire 10s linear infinite;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: Imapct;
+}
+@keyframes fire {
+    0%{background-position: 0% 50%;}
+    0%{background-position: 100% -50%;}
+}
+

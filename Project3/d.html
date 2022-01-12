@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+        background:  #000;
+    }
+    #logo{
+    font-size: 100px;
+    color: transparent;
+    background: url("/fire.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: back 20s linear infinite;
+    -webkit-background-clip: text;
+    font-family: Imapct;
+}
+/* @keyframes back{
+    100%{
+        background-position: 1000px 0;
+    }
+} */
+@keyframes back {
+        0%{background-position: 0% 50%;}
+        0%{background-position: 100% -50%;}
+    }
+</style>
+<body>
+    <span id="logo">fire</span>
+</body>
+</html>

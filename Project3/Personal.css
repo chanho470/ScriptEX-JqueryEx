@@ -1,0 +1,65 @@
+body{
+    background:url("./back.jpg") ;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    height: 2000px;
+}
+.wrap{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+#logo{
+    display:  block;
+    background: url('./fire2.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation:fire 10s linear infinite;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: Imapct;
+}
+@keyframes fire {
+    0%{background-position: 0% 50%;}
+    0%{background-position: 100% -50%;}
+}
+
+.container{
+    width: 100%;
+	margin: 10% 20% 10% 20%;
+}
+
+#tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 0px 10px 0px;
+    width: 20%;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+    width: 60%;
+    height: 400px;
+	background: #ededed;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
