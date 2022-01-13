@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <p id="d1"></p><p id="d2"></p><p id="d3"></p><p id="d4"></p>
+    <p id="d1"></p><p id="d2"></p><p id="d3"></p><p id="d4"></p>
     <script>
-        // document.getElementById('d1').innerHTML = new Date();
-        // document.getElementById('d2').innerHTML = new Date(1491803527400);
-        // document.getElementById('d3').innerHTML = new Date('October 15,2018 06:18:07');
-        // document.getElementById('d4').innerHTML = new Date(2018,11,25,18,30,29);
-    </script> -->
+        document.getElementById('d1').innerHTML = new Date();
+        document.getElementById('d2').innerHTML = new Date(1491803527400);
+        document.getElementById('d3').innerHTML = new Date('October 15,2018 06:18:07');
+        document.getElementById('d4').innerHTML = new Date(2018,11,25,18,30,29);
+    </script>
 
     <div id="digClock"></div>
     <script>
@@ -21,7 +21,8 @@
             var today= new Date();
             var day = today.getMonth()+1 +"월"+today.getDate()+"일";
             var time = today.getHours()+"시"+today.getMinutes()+"분"+today.getSeconds()+"초";
-            document.getElementById("digClock").innerHTML=day+time;
+            
+            document.getElementById("digClock").innerHTML=day+time; //중요
             setTimeout('digClock()',1000); //시간 업데이트
         }
         digClock();

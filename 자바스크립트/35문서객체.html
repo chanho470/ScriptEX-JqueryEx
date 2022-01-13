@@ -9,12 +9,12 @@
 <body>
     <script>
         function add(){
-            var header = document.createElement('h3');
-            var textNode =document.createTextNode("내이름은 김찬호입니다");
-            header.appendChild(textNode); //<h3> 내 이름은 김찬호 입니다 </h3>
-            document.body.appendChild(header); //html 
+            var header = document.createElement('h3'); // 헤더 생성하고 
+            var textNode =document.createTextNode("내이름은 김찬호입니다"); //텍스트 생성해서 
+            header.appendChild(textNode); //<h3> 내 이름은 김찬호 입니다 </h3> 둘이 합침
+            document.body.appendChild(header); //html 합친것을 바디에다가 출겨해줌
         };
     </script>
-    <a href="#" onclick="add()">당신의 이름은 무엇입니까?</a>
+    <a href="#" onclick="add()">당신의 이름은 무엇입니까?</a> 
 </body>
 </html>

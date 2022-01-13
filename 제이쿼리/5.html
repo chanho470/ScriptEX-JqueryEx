@@ -20,11 +20,11 @@
                 width:200,
                 height:100,
                 background:'orange'
-            });
+            }); //스타일 지정
 
-            $('div.out').mouseenter(function(){
-                $('p:first',this).text('마우스 포인트 들어옴');
-                $('p:last',this).text(++n);
+            $('div.out').mouseenter(function(){ //마우스 들옹헜울때
+                $('p:first',this).text('마우스 포인트 들어옴'); //앞에있는 피
+                $('p:last',this).text(++n); //뒤에있는 피
             }); 
             $("div.out").mouseleave(function() {
                 $("p:first", this).text("마우스 포인트 나감");

@@ -26,8 +26,8 @@
     <button class="remove">css적용 해제</button>
     <script>
         $(document).ready(function(){
-            $('button.add').click(function(){
-                $('h1,h2,p').addClass('blue');
+            $('button.add').click(function(){ //클릭하면
+                $('h1,h2,p').addClass('blue');  // 한번에 스타일 지정
                 $('div').addClass('important');
             });
             $('button.remove').click(function(){
